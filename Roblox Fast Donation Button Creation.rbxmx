@@ -59,10 +59,9 @@ BaseGui.Parent = Plugin]]></ProtectedString>
 				<string name="Name">readme</string>
 				<string name="ScriptGuid">{E365225F-4C92-4A43-B720-D823E24C163D}</string>
 				<ProtectedString name="Source"><![CDATA[--[[
-If you are reading this, you have downloaded the source. This plugin is not open-source and
-I do not want anyone stealing this. If you are scanning for security purposes then that is fine.
+If you are reading this, you have downloaded the source successfully. I hope you can help to improve this plugin.
 
-GamersInternational, Creator
+GamersInternational [aka FlynnFarrow], Creator
 ]]--]]></ProtectedString>
 				<int64 name="SourceAssetId">-1</int64>
 				<BinaryString name="Tags"></BinaryString>
