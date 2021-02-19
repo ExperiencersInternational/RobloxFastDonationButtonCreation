@@ -15,8 +15,8 @@
 				<Content name="LinkedSource"><null></null></Content>
 				<string name="Name">MainScript</string>
 				<string name="ScriptGuid">{B8CF374A-5424-47D7-9EF1-74C3A770C887}</string>
-				<ProtectedString name="Source"><![CDATA[local toolbar = plugin:CreateToolbar("Roblox Fast Donation Button Creation")
-local ToolbarButton = toolbar:CreateButton ("Open Menu", "Opens menu that allows you to add a donation button quickly", "rbxassetid://6060983497")
+				<ProtectedString name="Source"><![CDATA[local toolbar = plugin:CreateToolbar("Roblox Fast Donation Button Creation by GamersInternational [" .. script.Parent.Version.Value .. "]")
+local ToolbarButton = toolbar:CreateButton ("Open Menu", "Opens menu that allows you to add a donation button quickly from a variety of themes", "rbxassetid://6417996209")
 
 local Plugin = plugin:CreateDockWidgetPluginGui(
 	"Roblox Fast Donation Button Creation",
@@ -65,6 +65,15 @@ GamersInternational, Founder of Rii-built Studios
 ]]--]]></ProtectedString>
 				<int64 name="SourceAssetId">-1</int64>
 				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+		</Item>
+		<Item class="StringValue" referent="RBX1B8599C1EA4F4E02B2333D227982C655">
+			<Properties>
+				<BinaryString name="AttributesSerialize"></BinaryString>
+				<string name="Name">Version</string>
+				<int64 name="SourceAssetId">-1</int64>
+				<BinaryString name="Tags"></BinaryString>
+				<string name="Value">v1.3.1</string>
 			</Properties>
 		</Item>
 		<Item class="Frame" referent="RBX5F92EF314C0840C89A1AE8391ED093A7">
@@ -307,9 +316,9 @@ GamersInternational, Founder of Rii-built Studios
 					<bool name="AutoLocalize">true</bool>
 					<token name="AutomaticSize">0</token>
 					<Color3 name="BackgroundColor3">
-						<R>0</R>
+						<R>1</R>
 						<G>1</G>
-						<B>0.498039246</B>
+						<B>1</B>
 					</Color3>
 					<float name="BackgroundTransparency">0</float>
 					<Color3 name="BorderColor3">
@@ -380,7 +389,7 @@ GamersInternational, Founder of Rii-built Studios
 						<bool name="Disabled">false</bool>
 						<Content name="LinkedSource"><null></null></Content>
 						<string name="Name">Script</string>
-						<string name="ScriptGuid">{8E558338-8BDC-4AF0-B1E9-715C1C56F9F2}</string>
+						<string name="ScriptGuid">{81DD081F-4A48-4B40-BB02-75F48286E466}</string>
 						<ProtectedString name="Source"><![CDATA[function click()
 	local DevProduct = script.Parent.Parent.TextBox
 	local ThemeMenu = script.Parent.Parent.Theme
@@ -447,6 +456,22 @@ script.Parent.MouseButton1Click:Connect(click)]]></ProtectedString>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
+				<Item class="UIGradient" referent="RBX6EE9F5E8367047839C989B8CFE61B8DD">
+					<Properties>
+						<BinaryString name="AttributesSerialize"></BinaryString>
+						<ColorSequence name="Color">0 0 1 0.498039 0 1 0 1 0 0 </ColorSequence>
+						<bool name="Enabled">true</bool>
+						<string name="Name">UIGradient</string>
+						<Vector2 name="Offset">
+							<X>0</X>
+							<Y>0</Y>
+						</Vector2>
+						<float name="Rotation">45</float>
+						<int64 name="SourceAssetId">-1</int64>
+						<BinaryString name="Tags"></BinaryString>
+						<NumberSequence name="Transparency">0 0 0 1 0 0 </NumberSequence>
+					</Properties>
+				</Item>
 			</Item>
 			<Item class="TextLabel" referent="RBX581FC564F2D7410AB447AFB2D28CA3A0">
 				<Properties>
@@ -501,7 +526,7 @@ script.Parent.MouseButton1Click:Connect(click)]]></ProtectedString>
 					<token name="SizeConstraint">0</token>
 					<int64 name="SourceAssetId">-1</int64>
 					<BinaryString name="Tags"></BinaryString>
-					<string name="Text">v1.3</string>
+					<string name="Text">v1.3.1</string>
 					<Color3 name="TextColor3">
 						<R>0</R>
 						<G>0</G>
@@ -653,7 +678,7 @@ script.Parent.MouseButton1Click:Connect(click)]]></ProtectedString>
 					<int name="BorderSizePixel">1</int>
 					<bool name="ClipsDescendants">false</bool>
 					<bool name="Draggable">false</bool>
-					<Content name="Image"><url>http://www.roblox.com/asset/?id=6060983482</url></Content>
+					<Content name="Image"><url>http://www.roblox.com/asset/?id=6337486012</url></Content>
 					<Color3 name="ImageColor3">
 						<R>1</R>
 						<G>1</G>
@@ -824,7 +849,7 @@ script.Parent.MouseButton1Click:Connect(click)]]></ProtectedString>
 						<bool name="Disabled">false</bool>
 						<Content name="LinkedSource"><null></null></Content>
 						<string name="Name">Script</string>
-						<string name="ScriptGuid">{740EA7CB-2E88-4BBD-A447-6C4294AD019C}</string>
+						<string name="ScriptGuid">{FC26AC71-AD8E-42D0-BC85-990A49E3507C}</string>
 						<ProtectedString name="Source"><![CDATA[function click()
 script.Parent.Parent.HelpFrame.Visible = true
 end
@@ -1205,7 +1230,7 @@ script.Parent.MouseButton1Click:Connect(click)]]></ProtectedString>
 							<bool name="Disabled">false</bool>
 							<Content name="LinkedSource"><null></null></Content>
 							<string name="Name">Script</string>
-							<string name="ScriptGuid">{573C1BE2-726B-4D37-883C-7A5BDA4C1C8F}</string>
+							<string name="ScriptGuid">{B9957BFE-B2A7-42B9-BA68-D6586F813C5D}</string>
 							<ProtectedString name="Source"><![CDATA[function click()
 script.Parent.Parent.Visible = false
 end
@@ -1270,7 +1295,7 @@ script.Parent.MouseButton1Click:Connect(click)]]></ProtectedString>
 					<token name="SizeConstraint">0</token>
 					<int64 name="SourceAssetId">-1</int64>
 					<BinaryString name="Tags"></BinaryString>
-					<string name="Text">Choose button theme</string>
+					<string name="Text">Choose button theme [More coming soon]</string>
 					<Color3 name="TextColor3">
 						<R>1</R>
 						<G>1</G>
@@ -1456,7 +1481,7 @@ script.Parent.MouseButton1Click:Connect(click)]]></ProtectedString>
 							<bool name="Disabled">false</bool>
 							<Content name="LinkedSource"><null></null></Content>
 							<string name="Name">Script</string>
-							<string name="ScriptGuid">{7E9284F0-0F60-40EB-BB96-56EE9BCAD1E9}</string>
+							<string name="ScriptGuid">{24A2595D-8B70-4F68-A517-7CF7886D52D8}</string>
 							<ProtectedString name="Source"><![CDATA[function click()
 	local r = script.Parent.Parent
 	r.ButtonASelected.Visible = true
@@ -1582,7 +1607,7 @@ script.Parent.MouseButton1Click:Connect(click)]]></ProtectedString>
 							<bool name="Disabled">false</bool>
 							<Content name="LinkedSource"><null></null></Content>
 							<string name="Name">Script</string>
-							<string name="ScriptGuid">{9D88B60E-227D-4CF3-82CE-58F2E17B9720}</string>
+							<string name="ScriptGuid">{617E1BEE-481C-4E6D-A994-51B2FB7D274B}</string>
 							<ProtectedString name="Source"><![CDATA[function click()
 	local r = script.Parent.Parent
 	r.ButtonBSelected.Visible = true
