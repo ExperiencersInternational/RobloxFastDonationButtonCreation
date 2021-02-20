@@ -73,7 +73,7 @@ GamersInternational, Founder of Rii-built Studios
 				<string name="Name">Version</string>
 				<int64 name="SourceAssetId">-1</int64>
 				<BinaryString name="Tags"></BinaryString>
-				<string name="Value">v1.3.1</string>
+				<string name="Value">v1.3.2</string>
 			</Properties>
 		</Item>
 		<Item class="Frame" referent="RBX5F92EF314C0840C89A1AE8391ED093A7">
@@ -389,7 +389,7 @@ GamersInternational, Founder of Rii-built Studios
 						<bool name="Disabled">false</bool>
 						<Content name="LinkedSource"><null></null></Content>
 						<string name="Name">Script</string>
-						<string name="ScriptGuid">{81DD081F-4A48-4B40-BB02-75F48286E466}</string>
+						<string name="ScriptGuid">{AD6F4844-DD2F-44A6-B4BC-CEAAB98FC198}</string>
 						<ProtectedString name="Source"><![CDATA[function click()
 	local DevProduct = script.Parent.Parent.TextBox
 	local ThemeMenu = script.Parent.Parent.Theme
@@ -419,6 +419,30 @@ GamersInternational, Founder of Rii-built Studios
 		donatebutton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		donatebutton.Text = 'Donate'
 		donatebutton.TextColor3 = Color3.fromRGB(13, 17, 28)
+		donatebutton.Font = 'GothamSemibold'
+		donatebutton.TextScaled = true
+		donatebutton.BorderSizePixel = 0
+		donatebutton.Parent = newgui
+		local donatescript = Instance.new("LocalScript")
+		donatescript.Source = "local id = ".. DevProduct.Text
+			.."\nlocal plr = game:GetService('Players')\nscript.Parent.MouseButton1Click:Connect(function() \ngame.MarketplaceService:PromptProductPurchase(plr.LocalPlayer, id) \nend)"
+		donatescript.Parent = donatebutton
+		local UICorner = Instance.new('UICorner')
+		UICorner.Parent = donatebutton
+		local UIGradient = Instance.new('UIGradient')
+		UIGradient.Parent = donatebutton
+		UIGradient.Color = ColorSequence.new{
+			ColorSequenceKeypoint.new(0, Color3.fromRGB(0, 255, 127)),
+			ColorSequenceKeypoint.new(1, Color3.fromRGB(0, 255, 0))
+		}
+	elseif ThemeMenu.ButtonCSelected.Visible == true then
+		local donatebutton = Instance.new("TextButton")
+		donatebutton.Position = UDim2.new(0.009,0,0.4,0)
+		donatebutton.Size = UDim2.new(0.1,0,0.08,0)
+		donatebutton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		donatebutton.BackgroundTransparency = 1
+		donatebutton.Text = 'Donate'
+		donatebutton.TextColor3 = Color3.fromRGB(255, 255, 255)
 		donatebutton.Font = 'GothamSemibold'
 		donatebutton.TextScaled = true
 		donatebutton.BorderSizePixel = 0
@@ -572,6 +596,20 @@ script.Parent.MouseButton1Click:Connect(click)]]></ProtectedString>
 							<O>8</O>
 						</UDim>
 						<string name="Name">UICorner</string>
+						<int64 name="SourceAssetId">-1</int64>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+				</Item>
+				<Item class="Script" referent="RBXC37372EBAF6B4BF48447A5EE910F3A5E">
+					<Properties>
+						<BinaryString name="AttributesSerialize"></BinaryString>
+						<bool name="Disabled">false</bool>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">Script</string>
+						<string name="ScriptGuid">{1E6E2045-F8D9-4C6B-8611-78258E6B5B96}</string>
+						<ProtectedString name="Source"><![CDATA[local a = script.Parent
+
+a.Text = a.Parent.Parent.Version.Value]]></ProtectedString>
 						<int64 name="SourceAssetId">-1</int64>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
@@ -849,7 +887,7 @@ script.Parent.MouseButton1Click:Connect(click)]]></ProtectedString>
 						<bool name="Disabled">false</bool>
 						<Content name="LinkedSource"><null></null></Content>
 						<string name="Name">Script</string>
-						<string name="ScriptGuid">{FC26AC71-AD8E-42D0-BC85-990A49E3507C}</string>
+						<string name="ScriptGuid">{1FD291D9-8653-4419-9DF7-8DC012FAE9E4}</string>
 						<ProtectedString name="Source"><![CDATA[function click()
 script.Parent.Parent.HelpFrame.Visible = true
 end
@@ -1230,7 +1268,7 @@ script.Parent.MouseButton1Click:Connect(click)]]></ProtectedString>
 							<bool name="Disabled">false</bool>
 							<Content name="LinkedSource"><null></null></Content>
 							<string name="Name">Script</string>
-							<string name="ScriptGuid">{B9957BFE-B2A7-42B9-BA68-D6586F813C5D}</string>
+							<string name="ScriptGuid">{1E67CB4E-AAAB-44DA-9D3D-D150BB5BE84C}</string>
 							<ProtectedString name="Source"><![CDATA[function click()
 script.Parent.Parent.Visible = false
 end
@@ -1481,10 +1519,11 @@ script.Parent.MouseButton1Click:Connect(click)]]></ProtectedString>
 							<bool name="Disabled">false</bool>
 							<Content name="LinkedSource"><null></null></Content>
 							<string name="Name">Script</string>
-							<string name="ScriptGuid">{24A2595D-8B70-4F68-A517-7CF7886D52D8}</string>
+							<string name="ScriptGuid">{36EBFD30-C7EE-4A9C-8CAC-AB04AE94D583}</string>
 							<ProtectedString name="Source"><![CDATA[function click()
 	local r = script.Parent.Parent
 	r.ButtonASelected.Visible = true
+	r.ButtonCSelected.Visible = false
 	r.ButtonBSelected.Visible = false
 end
 
@@ -1607,10 +1646,11 @@ script.Parent.MouseButton1Click:Connect(click)]]></ProtectedString>
 							<bool name="Disabled">false</bool>
 							<Content name="LinkedSource"><null></null></Content>
 							<string name="Name">Script</string>
-							<string name="ScriptGuid">{617E1BEE-481C-4E6D-A994-51B2FB7D274B}</string>
+							<string name="ScriptGuid">{CAE6F2FA-C6CC-42ED-90BB-E02435D36ADB}</string>
 							<ProtectedString name="Source"><![CDATA[function click()
 	local r = script.Parent.Parent
 	r.ButtonBSelected.Visible = true
+	r.ButtonCSelected.Visible = false
 	r.ButtonASelected.Visible = false
 end
 
@@ -1742,6 +1782,200 @@ script.Parent.MouseButton1Click:Connect(click)]]></ProtectedString>
 						<int name="ZIndex">1</int>
 					</Properties>
 					<Item class="UICorner" referent="RBXFCEA5A936EC642B189B09AAE7D68238B">
+						<Properties>
+							<BinaryString name="AttributesSerialize"></BinaryString>
+							<UDim name="CornerRadius">
+								<S>0</S>
+								<O>8</O>
+							</UDim>
+							<string name="Name">UICorner</string>
+							<int64 name="SourceAssetId">-1</int64>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+				</Item>
+				<Item class="TextButton" referent="RBX99899899C1D84B3BB3D615B9D9A45D62">
+					<Properties>
+						<bool name="Active">true</bool>
+						<Vector2 name="AnchorPoint">
+							<X>0</X>
+							<Y>0</Y>
+						</Vector2>
+						<BinaryString name="AttributesSerialize"></BinaryString>
+						<bool name="AutoButtonColor">true</bool>
+						<bool name="AutoLocalize">true</bool>
+						<token name="AutomaticSize">0</token>
+						<Color3 name="BackgroundColor3">
+							<R>1</R>
+							<G>1</G>
+							<B>1</B>
+						</Color3>
+						<float name="BackgroundTransparency">1</float>
+						<Color3 name="BorderColor3">
+							<R>0.105882362</R>
+							<G>0.164705887</G>
+							<B>0.207843155</B>
+						</Color3>
+						<token name="BorderMode">0</token>
+						<int name="BorderSizePixel">1</int>
+						<bool name="ClipsDescendants">false</bool>
+						<bool name="Draggable">false</bool>
+						<token name="Font">18</token>
+						<int name="LayoutOrder">0</int>
+						<float name="LineHeight">1</float>
+						<bool name="Modal">false</bool>
+						<string name="Name">ButtonC</string>
+						<Ref name="NextSelectionDown">null</Ref>
+						<Ref name="NextSelectionLeft">null</Ref>
+						<Ref name="NextSelectionRight">null</Ref>
+						<Ref name="NextSelectionUp">null</Ref>
+						<UDim2 name="Position">
+							<XS>0.567355394</XS>
+							<XO>0</XO>
+							<YS>0.108695649</YS>
+							<YO>0</YO>
+						</UDim2>
+						<bool name="RichText">false</bool>
+						<Ref name="RootLocalizationTable">null</Ref>
+						<float name="Rotation">0</float>
+						<bool name="Selectable">true</bool>
+						<bool name="Selected">false</bool>
+						<Ref name="SelectionImageObject">null</Ref>
+						<UDim2 name="Size">
+							<XS>0.249643952</XS>
+							<XO>0</XO>
+							<YS>0.543478251</YS>
+							<YO>0</YO>
+						</UDim2>
+						<token name="SizeConstraint">0</token>
+						<int64 name="SourceAssetId">-1</int64>
+						<token name="Style">0</token>
+						<BinaryString name="Tags"></BinaryString>
+						<string name="Text">Donate</string>
+						<Color3 name="TextColor3">
+							<R>1</R>
+							<G>1</G>
+							<B>1</B>
+						</Color3>
+						<bool name="TextScaled">true</bool>
+						<float name="TextSize">14</float>
+						<Color3 name="TextStrokeColor3">
+							<R>0</R>
+							<G>0</G>
+							<B>0</B>
+						</Color3>
+						<float name="TextStrokeTransparency">1</float>
+						<float name="TextTransparency">0</float>
+						<token name="TextTruncate">0</token>
+						<bool name="TextWrapped">true</bool>
+						<token name="TextXAlignment">2</token>
+						<token name="TextYAlignment">1</token>
+						<bool name="Visible">true</bool>
+						<int name="ZIndex">1</int>
+					</Properties>
+					<Item class="UICorner" referent="RBX81F09C1D47374594A6F26682E67255C6">
+						<Properties>
+							<BinaryString name="AttributesSerialize"></BinaryString>
+							<UDim name="CornerRadius">
+								<S>0</S>
+								<O>8</O>
+							</UDim>
+							<string name="Name">UICorner</string>
+							<int64 name="SourceAssetId">-1</int64>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="UIGradient" referent="RBXF60856F1F66B4255A8ABD3A8DE5FFFEF">
+						<Properties>
+							<BinaryString name="AttributesSerialize"></BinaryString>
+							<ColorSequence name="Color">0 0 1 0.498039 0 1 0 1 0 0 </ColorSequence>
+							<bool name="Enabled">true</bool>
+							<string name="Name">UIGradient</string>
+							<Vector2 name="Offset">
+								<X>0</X>
+								<Y>0</Y>
+							</Vector2>
+							<float name="Rotation">0</float>
+							<int64 name="SourceAssetId">-1</int64>
+							<BinaryString name="Tags"></BinaryString>
+							<NumberSequence name="Transparency">0 0 0 1 0 0 </NumberSequence>
+						</Properties>
+					</Item>
+					<Item class="Script" referent="RBXEEC45193B1794319AEEEE37CAAFA8B11">
+						<Properties>
+							<BinaryString name="AttributesSerialize"></BinaryString>
+							<bool name="Disabled">false</bool>
+							<Content name="LinkedSource"><null></null></Content>
+							<string name="Name">Script</string>
+							<string name="ScriptGuid">{D43E8313-3753-4682-B80F-B56A4A101E15}</string>
+							<ProtectedString name="Source"><![CDATA[function click()
+	local r = script.Parent.Parent
+	r.ButtonCSelected.Visible = true
+	r.ButtonBSelected.Visible = false
+	r.ButtonASelected.Visible = false
+end
+
+script.Parent.MouseButton1Click:Connect(click)]]></ProtectedString>
+							<int64 name="SourceAssetId">-1</int64>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+				</Item>
+				<Item class="Frame" referent="RBXD685771C9BEE416D9A044A1BC2CDAA94">
+					<Properties>
+						<bool name="Active">false</bool>
+						<Vector2 name="AnchorPoint">
+							<X>0</X>
+							<Y>0</Y>
+						</Vector2>
+						<BinaryString name="AttributesSerialize"></BinaryString>
+						<bool name="AutoLocalize">true</bool>
+						<token name="AutomaticSize">0</token>
+						<Color3 name="BackgroundColor3">
+							<R>0.333333343</R>
+							<G>1</G>
+							<B>1</B>
+						</Color3>
+						<float name="BackgroundTransparency">0</float>
+						<Color3 name="BorderColor3">
+							<R>0.105882362</R>
+							<G>0.164705887</G>
+							<B>0.207843155</B>
+						</Color3>
+						<token name="BorderMode">0</token>
+						<int name="BorderSizePixel">1</int>
+						<bool name="ClipsDescendants">false</bool>
+						<bool name="Draggable">false</bool>
+						<int name="LayoutOrder">0</int>
+						<string name="Name">ButtonCSelected</string>
+						<Ref name="NextSelectionDown">null</Ref>
+						<Ref name="NextSelectionLeft">null</Ref>
+						<Ref name="NextSelectionRight">null</Ref>
+						<Ref name="NextSelectionUp">null</Ref>
+						<UDim2 name="Position">
+							<XS>0.650986135</XS>
+							<XO>0</XO>
+							<YS>0.782608688</YS>
+							<YO>0</YO>
+						</UDim2>
+						<Ref name="RootLocalizationTable">null</Ref>
+						<float name="Rotation">0</float>
+						<bool name="Selectable">false</bool>
+						<Ref name="SelectionImageObject">null</Ref>
+						<UDim2 name="Size">
+							<XS>0.0821328461</XS>
+							<XO>0</XO>
+							<YS>0.108695649</YS>
+							<YO>0</YO>
+						</UDim2>
+						<token name="SizeConstraint">0</token>
+						<int64 name="SourceAssetId">-1</int64>
+						<token name="Style">0</token>
+						<BinaryString name="Tags"></BinaryString>
+						<bool name="Visible">false</bool>
+						<int name="ZIndex">1</int>
+					</Properties>
+					<Item class="UICorner" referent="RBX97E0E215577D41D594C9563E7365867E">
 						<Properties>
 							<BinaryString name="AttributesSerialize"></BinaryString>
 							<UDim name="CornerRadius">
