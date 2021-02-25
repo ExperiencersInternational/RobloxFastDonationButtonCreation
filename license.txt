@@ -1,0 +1,11 @@
+Official License for Roblox Fast Donation Button Creation by FlynnFarrow (C) 2021
+
+"Contributor" references to the owner, FlynnFarrow
+"Product" references to the plugin, Roblox Fast Donation Button Creation
+
+- You may not sell this product for money unless you get permission from the Contributor
+- You may use this product in a business, group or an individual situation
+- You may not use any of the icons in this product for other products unless you consult the Contributor
+- You may not patent or claim any copyright on this product
+- Any forks of this product has to be open-source unless you get permission from the Contributor
+- The contributor has no liability for any issues with the plugin and the contributor does not give you a warranty
