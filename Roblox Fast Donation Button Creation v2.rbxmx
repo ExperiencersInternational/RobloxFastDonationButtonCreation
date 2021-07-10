@@ -85,7 +85,7 @@ GamersInternational, Founder of Rii-built Studios
 				<string name="Name">Version</string>
 				<int64 name="SourceAssetId">-1</int64>
 				<BinaryString name="Tags"></BinaryString>
-				<string name="Value">v2.0</string>
+				<string name="Value">v2.0.1</string>
 			</Properties>
 		</Item>
 		<Item class="StringValue" referent="RBXED3DB27C8A214D469EC92D7282AC99A6">
@@ -94,7 +94,7 @@ GamersInternational, Founder of Rii-built Studios
 				<string name="Name">Build</string>
 				<int64 name="SourceAssetId">-1</int64>
 				<BinaryString name="Tags"></BinaryString>
-				<string name="Value">17</string>
+				<string name="Value">18</string>
 			</Properties>
 		</Item>
 		<Item class="Frame" referent="RBX5F92EF314C0840C89A1AE8391ED093A7">
@@ -665,7 +665,7 @@ GamersInternational, Founder of Rii-built Studios
 								<bool name="Disabled">false</bool>
 								<Content name="LinkedSource"><null></null></Content>
 								<string name="Name">Script</string>
-								<string name="ScriptGuid">{BDBAF624-F406-4A43-B2D6-1E1B9EB5B3D3}</string>
+								<string name="ScriptGuid">{6F5F68A1-06E8-49D0-9154-A7AB59B0CAB8}</string>
 								<ProtectedString name="Source"><![CDATA[script.Parent.Activated:Connect(function()
 	script.Parent.Parent.Parent.MenuOpened.Visible = true
 end)]]></ProtectedString>
@@ -904,7 +904,7 @@ end)]]></ProtectedString>
 								<bool name="Disabled">false</bool>
 								<Content name="LinkedSource"><null></null></Content>
 								<string name="Name">Script</string>
-								<string name="ScriptGuid">{758E5171-ED77-4271-885E-FF6C61BB430B}</string>
+								<string name="ScriptGuid">{1130F2C2-6AEB-4B7A-9056-38E9AC7AA650}</string>
 								<ProtectedString name="Source"><![CDATA[local menuopened = script.Parent.Parent
 
 script.Parent.Activated:Connect(function()
@@ -1084,7 +1084,7 @@ end)]]></ProtectedString>
 									<bool name="Disabled">false</bool>
 									<Content name="LinkedSource"><null></null></Content>
 									<string name="Name">LocalScript</string>
-									<string name="ScriptGuid">{39DF36A1-B2E9-42B8-ACA1-59BF32FA79AF}</string>
+									<string name="ScriptGuid">{19C82CA0-4D3C-4142-A72D-47749532BCDA}</string>
 									<ProtectedString name="Source"><![CDATA[local Players = game:GetService("Players")
 
 local player = Players.LocalPlayer
@@ -1187,7 +1187,7 @@ imageLabel.Image = content]]></ProtectedString>
 									<bool name="Disabled">false</bool>
 									<Content name="LinkedSource"><null></null></Content>
 									<string name="Name">Script</string>
-									<string name="ScriptGuid">{1BF1FCDB-F1E7-4DB9-BB63-5FBB706C3277}</string>
+									<string name="ScriptGuid">{FAA7625D-F138-4F90-A492-B58373EF7FFC}</string>
 									<ProtectedString name="Source"><![CDATA[-- Can only be used in a plugin
 local StudioService = game:GetService("StudioService")
 local Players = game:GetService("Players")
@@ -1283,7 +1283,7 @@ script.Parent.Text = loggedInUserName]]></ProtectedString>
 									<bool name="Disabled">false</bool>
 									<Content name="LinkedSource"><null></null></Content>
 									<string name="Name">Script</string>
-									<string name="ScriptGuid">{C78DCB98-F8E8-4846-9BD6-337D8A4096AF}</string>
+									<string name="ScriptGuid">{09A31711-10B3-4232-A60C-D4FF9BA808C3}</string>
 									<ProtectedString name="Source"><![CDATA[local label = script.Parent
 
 label.Text = 'Your using Roblox Fast Donation Button Creation '.. label.Parent.Parent.Parent.Parent.Parent.Version.Value]]></ProtectedString>
@@ -1599,7 +1599,7 @@ label.Text = 'Your using Roblox Fast Donation Button Creation '.. label.Parent.P
 									<bool name="Disabled">false</bool>
 									<Content name="LinkedSource"><null></null></Content>
 									<string name="Name">Script</string>
-									<string name="ScriptGuid">{19F4E226-BA12-4CA7-B40E-2B4B02581010}</string>
+									<string name="ScriptGuid">{ED244666-4926-4D22-9AD4-5F2F5F5A061E}</string>
 									<ProtectedString name="Source"><![CDATA[local menuopened = script.Parent.Parent.Parent
 local home = menuopened.Parent
 
@@ -1699,7 +1699,7 @@ end)]]></ProtectedString>
 									<bool name="Disabled">false</bool>
 									<Content name="LinkedSource"><null></null></Content>
 									<string name="Name">Script</string>
-									<string name="ScriptGuid">{DF728614-92A6-474D-8C45-4FBB1879001B}</string>
+									<string name="ScriptGuid">{3A54A911-6F8D-499C-AC30-84E5B3C6E723}</string>
 									<ProtectedString name="Source"><![CDATA[local menuopened = script.Parent.Parent.Parent
 local home = menuopened.Parent
 
@@ -1866,7 +1866,7 @@ end)]]></ProtectedString>
 									<bool name="Disabled">false</bool>
 									<Content name="LinkedSource"><null></null></Content>
 									<string name="Name">Script</string>
-									<string name="ScriptGuid">{910B2CF1-3F44-4FB0-94AF-079FC7206790}</string>
+									<string name="ScriptGuid">{8D2A597E-DEAE-4A3A-AC61-BFA7B3A39F1C}</string>
 									<ProtectedString name="Source"><![CDATA[local menuopened = script.Parent.Parent.Parent
 local home = menuopened.Parent
 
@@ -1966,7 +1966,7 @@ end)]]></ProtectedString>
 									<bool name="Disabled">false</bool>
 									<Content name="LinkedSource"><null></null></Content>
 									<string name="Name">Script</string>
-									<string name="ScriptGuid">{AD8A4F1C-8817-48B9-9829-52827B53ACAA}</string>
+									<string name="ScriptGuid">{54F29820-13F7-4866-A1BF-9B87ECC21780}</string>
 									<ProtectedString name="Source"><![CDATA[local menuopened = script.Parent.Parent.Parent
 local home = menuopened.Parent
 
@@ -2133,7 +2133,7 @@ end)]]></ProtectedString>
 									<bool name="Disabled">false</bool>
 									<Content name="LinkedSource"><null></null></Content>
 									<string name="Name">Script</string>
-									<string name="ScriptGuid">{E0340385-BD00-4A6D-B632-FEF659E3518F}</string>
+									<string name="ScriptGuid">{23D2F72B-20FA-4386-B31A-6FA6F745C7B3}</string>
 									<ProtectedString name="Source"><![CDATA[local menuopened = script.Parent.Parent.Parent
 
 script.Parent.Activated:Connect(function()
@@ -2230,7 +2230,7 @@ end)]]></ProtectedString>
 									<bool name="Disabled">false</bool>
 									<Content name="LinkedSource"><null></null></Content>
 									<string name="Name">Script</string>
-									<string name="ScriptGuid">{36128992-156D-447B-80DC-E131A75D6155}</string>
+									<string name="ScriptGuid">{0B3DCC26-504F-4BB5-9053-BC8CB93A290D}</string>
 									<ProtectedString name="Source"><![CDATA[local menuopened = script.Parent.Parent.Parent
 
 script.Parent.Activated:Connect(function()
@@ -2562,7 +2562,7 @@ end)]]></ProtectedString>
 						<bool name="ClipsDescendants">false</bool>
 						<bool name="Draggable">false</bool>
 						<int name="LayoutOrder">0</int>
-						<string name="Name">RequireCreditGui</string>
+						<string name="Name">AttributionGui</string>
 						<Ref name="NextSelectionDown">null</Ref>
 						<Ref name="NextSelectionLeft">null</Ref>
 						<Ref name="NextSelectionRight">null</Ref>
@@ -3011,7 +3011,7 @@ end)]]></ProtectedString>
 									<bool name="Disabled">false</bool>
 									<Content name="LinkedSource"><null></null></Content>
 									<string name="Name">Script</string>
-									<string name="ScriptGuid">{94C9D4A1-F55A-4072-858A-3E4F71F7A4BE}</string>
+									<string name="ScriptGuid">{95BC2B80-C053-4A50-9019-A0DB86D485C5}</string>
 									<ProtectedString name="Source"><![CDATA[function click()
 	local e = script.Parent.Parent.Parent
 	e.Visible = false
@@ -3137,7 +3137,7 @@ script.Parent.MouseButton1Click:Connect(click)]]></ProtectedString>
 									<bool name="Disabled">false</bool>
 									<Content name="LinkedSource"><null></null></Content>
 									<string name="Name">Script</string>
-									<string name="ScriptGuid">{79798967-6656-4AC0-B2BA-A5658D4CAAA8}</string>
+									<string name="ScriptGuid">{28A79B5A-185A-438E-8C72-F5FB1BABACE1}</string>
 									<ProtectedString name="Source"><![CDATA[function click()
 	local e = script.Parent.Parent.Parent
 	local r = e.Parent.Theme
@@ -3320,7 +3320,7 @@ script.Parent.MouseButton1Click:Connect(click)]]></ProtectedString>
 								<bool name="Disabled">false</bool>
 								<Content name="LinkedSource"><null></null></Content>
 								<string name="Name">Script</string>
-								<string name="ScriptGuid">{0E300FFC-5C75-4DF6-9FF0-B55D4B5BC16B}</string>
+								<string name="ScriptGuid">{2C8B29AE-6560-4CD2-8711-A563A3500D9F}</string>
 								<ProtectedString name="Source"><![CDATA[function click()
 	local r = script.Parent.Parent
 	r.ButtonASelected.Visible = true
@@ -3449,7 +3449,7 @@ script.Parent.MouseButton1Click:Connect(click)]]></ProtectedString>
 								<bool name="Disabled">false</bool>
 								<Content name="LinkedSource"><null></null></Content>
 								<string name="Name">Script</string>
-								<string name="ScriptGuid">{EF2D3C63-EF21-4034-BE6D-CBF8961D6849}</string>
+								<string name="ScriptGuid">{CA9DA9D3-07FD-4D36-8A4F-410E24D44BF3}</string>
 								<ProtectedString name="Source"><![CDATA[function click()
 	local r = script.Parent.Parent
 	r.ButtonBSelected.Visible = true
@@ -3744,7 +3744,7 @@ script.Parent.MouseButton1Click:Connect(click)]]></ProtectedString>
 								<bool name="Disabled">false</bool>
 								<Content name="LinkedSource"><null></null></Content>
 								<string name="Name">Script</string>
-								<string name="ScriptGuid">{53F171DC-572C-4F91-B172-21651A6612A5}</string>
+								<string name="ScriptGuid">{2F66BF4F-2C9A-4FB5-A694-A92CCFFBFFA3}</string>
 								<ProtectedString name="Source"><![CDATA[function click()
 	local r = script.Parent.Parent
 	r.ButtonCSelected.Visible = true
@@ -3940,10 +3940,10 @@ script.Parent.MouseButton1Click:Connect(click)]]></ProtectedString>
 								<bool name="Disabled">false</bool>
 								<Content name="LinkedSource"><null></null></Content>
 								<string name="Name">Script</string>
-								<string name="ScriptGuid">{9A2E58A0-393A-482F-A0CA-0E7F451D6F53}</string>
+								<string name="ScriptGuid">{3416EAFC-2253-42B9-93C2-141E89F4F1C8}</string>
 								<ProtectedString name="Source"><![CDATA[function click()
 	local r = script.Parent.Parent
-	r.Parent.RequireCreditGui.Visible = true
+	r.Parent.AttributionGui.Visible = true
 end
 
 script.Parent.MouseButton1Click:Connect(click)]]></ProtectedString>
@@ -4255,7 +4255,7 @@ script.Parent.MouseButton1Click:Connect(click)]]></ProtectedString>
 							<bool name="Disabled">false</bool>
 							<Content name="LinkedSource"><null></null></Content>
 							<string name="Name">Script</string>
-							<string name="ScriptGuid">{00CE92ED-8117-4015-A5FF-883C8DDE216D}</string>
+							<string name="ScriptGuid">{A2C63A4D-0990-4F67-813C-4D4AE5EE09FB}</string>
 							<ProtectedString name="Source"><![CDATA[function click()
 	local DevProduct = script.Parent.Parent.TextBox
 	local ThemeMenu = script.Parent.Parent.Theme
@@ -4682,7 +4682,7 @@ script.Parent.MouseButton1Click:Connect(click)]]></ProtectedString>
 								<bool name="Disabled">false</bool>
 								<Content name="LinkedSource"><null></null></Content>
 								<string name="Name">Script</string>
-								<string name="ScriptGuid">{62D1974D-0691-4554-9E22-9454A1B72605}</string>
+								<string name="ScriptGuid">{0FE1F0B2-B4E3-4C53-BEA1-C491C6263F75}</string>
 								<ProtectedString name="Source"><![CDATA[script.Parent.Activated:Connect(function()
 	script.Parent.Parent.Parent.MenuOpened.Visible = true
 end)]]></ProtectedString>
@@ -4921,7 +4921,7 @@ end)]]></ProtectedString>
 								<bool name="Disabled">false</bool>
 								<Content name="LinkedSource"><null></null></Content>
 								<string name="Name">Script</string>
-								<string name="ScriptGuid">{DA468B63-82C8-4D0F-8AF1-D7C64D0B0975}</string>
+								<string name="ScriptGuid">{129DE21C-299C-4F46-949D-B65B39F5160D}</string>
 								<ProtectedString name="Source"><![CDATA[local menuopened = script.Parent.Parent
 
 script.Parent.Activated:Connect(function()
@@ -5101,7 +5101,7 @@ end)]]></ProtectedString>
 									<bool name="Disabled">false</bool>
 									<Content name="LinkedSource"><null></null></Content>
 									<string name="Name">LocalScript</string>
-									<string name="ScriptGuid">{760404A4-5119-4596-A6C0-475FAFFCAECD}</string>
+									<string name="ScriptGuid">{64342B1C-EA08-479C-AE31-01BC8512B8FB}</string>
 									<ProtectedString name="Source"><![CDATA[local Players = game:GetService("Players")
 
 local player = Players.LocalPlayer
@@ -5204,7 +5204,7 @@ imageLabel.Image = content]]></ProtectedString>
 									<bool name="Disabled">false</bool>
 									<Content name="LinkedSource"><null></null></Content>
 									<string name="Name">Script</string>
-									<string name="ScriptGuid">{071739C1-D707-49CD-B457-551576399433}</string>
+									<string name="ScriptGuid">{A0BFBF72-A06F-4E83-ABC0-0DEA60D9408E}</string>
 									<ProtectedString name="Source"><![CDATA[-- Can only be used in a plugin
 local StudioService = game:GetService("StudioService")
 local Players = game:GetService("Players")
@@ -5300,7 +5300,7 @@ script.Parent.Text = loggedInUserName]]></ProtectedString>
 									<bool name="Disabled">false</bool>
 									<Content name="LinkedSource"><null></null></Content>
 									<string name="Name">Script</string>
-									<string name="ScriptGuid">{C28B3AEE-0A1D-469E-B1E3-D966A64FA8A4}</string>
+									<string name="ScriptGuid">{130E6206-7F50-4AE7-87C9-D18DAC00CC55}</string>
 									<ProtectedString name="Source"><![CDATA[local label = script.Parent
 
 label.Text = 'Your using Roblox Fast Donation Button Creation '.. label.Parent.Parent.Parent.Parent.Parent.Version.Value]]></ProtectedString>
@@ -5616,7 +5616,7 @@ label.Text = 'Your using Roblox Fast Donation Button Creation '.. label.Parent.P
 									<bool name="Disabled">false</bool>
 									<Content name="LinkedSource"><null></null></Content>
 									<string name="Name">Script</string>
-									<string name="ScriptGuid">{228D2441-2C16-45A4-B728-3E4D95574229}</string>
+									<string name="ScriptGuid">{633FD0EC-D795-440E-B400-3F7AAAE2845C}</string>
 									<ProtectedString name="Source"><![CDATA[local menuopened = script.Parent.Parent.Parent
 
 script.Parent.Activated:Connect(function()
@@ -5713,7 +5713,7 @@ end)]]></ProtectedString>
 									<bool name="Disabled">false</bool>
 									<Content name="LinkedSource"><null></null></Content>
 									<string name="Name">Script</string>
-									<string name="ScriptGuid">{CBDBBF56-F36F-47ED-B0ED-10F00A11F724}</string>
+									<string name="ScriptGuid">{5C9E221E-8E23-4AEC-B820-C88B50DE077F}</string>
 									<ProtectedString name="Source"><![CDATA[local menuopened = script.Parent.Parent.Parent
 
 script.Parent.Activated:Connect(function()
@@ -5877,7 +5877,7 @@ end)]]></ProtectedString>
 									<bool name="Disabled">false</bool>
 									<Content name="LinkedSource"><null></null></Content>
 									<string name="Name">Script</string>
-									<string name="ScriptGuid">{9C55617C-0BA6-4901-ACD3-481E275B68D8}</string>
+									<string name="ScriptGuid">{AF0FCCD2-20FC-4581-8696-CC30CC15EC57}</string>
 									<ProtectedString name="Source"><![CDATA[local menuopened = script.Parent.Parent.Parent
 local home = menuopened.Parent
 
@@ -5977,7 +5977,7 @@ end)]]></ProtectedString>
 									<bool name="Disabled">false</bool>
 									<Content name="LinkedSource"><null></null></Content>
 									<string name="Name">Script</string>
-									<string name="ScriptGuid">{F2A8164B-416B-4870-B12C-DA3186F0D083}</string>
+									<string name="ScriptGuid">{56844DCF-A574-4E10-95A3-1D63E27B7FDF}</string>
 									<ProtectedString name="Source"><![CDATA[local menuopened = script.Parent.Parent.Parent
 local home = menuopened.Parent
 
@@ -6144,7 +6144,7 @@ end)]]></ProtectedString>
 									<bool name="Disabled">false</bool>
 									<Content name="LinkedSource"><null></null></Content>
 									<string name="Name">Script</string>
-									<string name="ScriptGuid">{75DE7366-E569-4247-8759-BFFA20AAD36F}</string>
+									<string name="ScriptGuid">{C42E2059-2291-470D-A0CE-A74A14DB97A8}</string>
 									<ProtectedString name="Source"><![CDATA[local menuopened = script.Parent.Parent.Parent
 local home = menuopened.Parent
 
@@ -6244,7 +6244,7 @@ end)]]></ProtectedString>
 									<bool name="Disabled">false</bool>
 									<Content name="LinkedSource"><null></null></Content>
 									<string name="Name">Script</string>
-									<string name="ScriptGuid">{0A82BA13-B479-4823-BAEC-A1DA4110D523}</string>
+									<string name="ScriptGuid">{123F3C0C-646C-4E74-A23A-A12E34547972}</string>
 									<ProtectedString name="Source"><![CDATA[local menuopened = script.Parent.Parent.Parent
 local home = menuopened.Parent
 
@@ -6795,7 +6795,7 @@ end)]]></ProtectedString>
 								<bool name="Disabled">false</bool>
 								<Content name="LinkedSource"><null></null></Content>
 								<string name="Name">Script</string>
-								<string name="ScriptGuid">{AD455929-19F3-4A45-B282-40569A74A47B}</string>
+								<string name="ScriptGuid">{C762A5CD-5C7C-46BE-80E5-5B035C1BDFA1}</string>
 								<ProtectedString name="Source"><![CDATA[script.Parent.Activated:Connect(function()
 	script.Parent.Parent.Parent.MenuOpened.Visible = true
 end)]]></ProtectedString>
@@ -7034,7 +7034,7 @@ end)]]></ProtectedString>
 								<bool name="Disabled">false</bool>
 								<Content name="LinkedSource"><null></null></Content>
 								<string name="Name">Script</string>
-								<string name="ScriptGuid">{5E24BBAE-5DE3-40C4-B002-025054C17B5D}</string>
+								<string name="ScriptGuid">{1D3A6ACE-091F-4B8D-AE0D-C1F49E788288}</string>
 								<ProtectedString name="Source"><![CDATA[local menuopened = script.Parent.Parent
 
 script.Parent.Activated:Connect(function()
@@ -7214,7 +7214,7 @@ end)]]></ProtectedString>
 									<bool name="Disabled">false</bool>
 									<Content name="LinkedSource"><null></null></Content>
 									<string name="Name">LocalScript</string>
-									<string name="ScriptGuid">{443661B1-8C8E-4AF8-917B-13D19E12993A}</string>
+									<string name="ScriptGuid">{5A30FEC0-F4C9-4B36-8230-E3E4FF0F0543}</string>
 									<ProtectedString name="Source"><![CDATA[local Players = game:GetService("Players")
 
 local player = Players.LocalPlayer
@@ -7317,7 +7317,7 @@ imageLabel.Image = content]]></ProtectedString>
 									<bool name="Disabled">false</bool>
 									<Content name="LinkedSource"><null></null></Content>
 									<string name="Name">Script</string>
-									<string name="ScriptGuid">{1C8A9F33-2694-430C-8198-6BBFE75435C0}</string>
+									<string name="ScriptGuid">{C9200D03-142A-4491-8378-DC0CAB87E7A3}</string>
 									<ProtectedString name="Source"><![CDATA[-- Can only be used in a plugin
 local StudioService = game:GetService("StudioService")
 local Players = game:GetService("Players")
@@ -7413,7 +7413,7 @@ script.Parent.Text = loggedInUserName]]></ProtectedString>
 									<bool name="Disabled">false</bool>
 									<Content name="LinkedSource"><null></null></Content>
 									<string name="Name">Script</string>
-									<string name="ScriptGuid">{F6870704-48EC-4099-BC5A-2FF093C1121A}</string>
+									<string name="ScriptGuid">{5B7858F0-9D14-4B9B-9E3E-E0AB16208219}</string>
 									<ProtectedString name="Source"><![CDATA[local label = script.Parent
 
 label.Text = 'Your using Roblox Fast Donation Button Creation '.. label.Parent.Parent.Parent.Parent.Parent.Version.Value]]></ProtectedString>
@@ -7729,7 +7729,7 @@ label.Text = 'Your using Roblox Fast Donation Button Creation '.. label.Parent.P
 									<bool name="Disabled">false</bool>
 									<Content name="LinkedSource"><null></null></Content>
 									<string name="Name">Script</string>
-									<string name="ScriptGuid">{FC8CD6FB-44C7-4CA9-83E5-C952E9EEE559}</string>
+									<string name="ScriptGuid">{381DFC4D-2889-4A75-948C-75BA2D5C7E90}</string>
 									<ProtectedString name="Source"><![CDATA[local menuopened = script.Parent.Parent.Parent
 local home = menuopened.Parent
 
@@ -7829,7 +7829,7 @@ end)]]></ProtectedString>
 									<bool name="Disabled">false</bool>
 									<Content name="LinkedSource"><null></null></Content>
 									<string name="Name">Script</string>
-									<string name="ScriptGuid">{8F9B54CE-F1B6-4682-BD8E-E5632019E208}</string>
+									<string name="ScriptGuid">{FC148CD5-3918-44EB-8F83-4F97B8F5576C}</string>
 									<ProtectedString name="Source"><![CDATA[local menuopened = script.Parent.Parent.Parent
 local home = menuopened.Parent
 
@@ -7996,7 +7996,7 @@ end)]]></ProtectedString>
 									<bool name="Disabled">false</bool>
 									<Content name="LinkedSource"><null></null></Content>
 									<string name="Name">Script</string>
-									<string name="ScriptGuid">{3578D391-36DE-4BC1-9C3D-E05F008C48B4}</string>
+									<string name="ScriptGuid">{5F9C1290-7D77-4B9F-8B57-8D8BA44D57D8}</string>
 									<ProtectedString name="Source"><![CDATA[local menuopened = script.Parent.Parent.Parent
 
 script.Parent.Activated:Connect(function()
@@ -8093,7 +8093,7 @@ end)]]></ProtectedString>
 									<bool name="Disabled">false</bool>
 									<Content name="LinkedSource"><null></null></Content>
 									<string name="Name">Script</string>
-									<string name="ScriptGuid">{9A7EF220-1B43-43E2-BB26-EFFFAE2E3F50}</string>
+									<string name="ScriptGuid">{3172EE30-52B8-4E5E-BCB7-09189405245C}</string>
 									<ProtectedString name="Source"><![CDATA[local menuopened = script.Parent.Parent.Parent
 
 script.Parent.Activated:Connect(function()
@@ -8257,7 +8257,7 @@ end)]]></ProtectedString>
 									<bool name="Disabled">false</bool>
 									<Content name="LinkedSource"><null></null></Content>
 									<string name="Name">Script</string>
-									<string name="ScriptGuid">{315D7330-F5EB-44A4-A131-6C5983F60432}</string>
+									<string name="ScriptGuid">{E2F49E2D-B14D-496A-A136-868CC34A3099}</string>
 									<ProtectedString name="Source"><![CDATA[local menuopened = script.Parent.Parent.Parent
 local home = menuopened.Parent
 
@@ -8357,7 +8357,7 @@ end)]]></ProtectedString>
 									<bool name="Disabled">false</bool>
 									<Content name="LinkedSource"><null></null></Content>
 									<string name="Name">Script</string>
-									<string name="ScriptGuid">{B045B8E0-0B32-4A23-974A-42F3EBD31EED}</string>
+									<string name="ScriptGuid">{F115E1F5-15E3-4B5C-A521-C69F81B46B0F}</string>
 									<ProtectedString name="Source"><![CDATA[local menuopened = script.Parent.Parent.Parent
 local home = menuopened.Parent
 
@@ -8825,7 +8825,7 @@ end)]]></ProtectedString>
 							<bool name="Disabled">false</bool>
 							<Content name="LinkedSource"><null></null></Content>
 							<string name="Name">Script</string>
-							<string name="ScriptGuid">{5E2976FB-6B45-4677-BE39-E9501455FB0A}</string>
+							<string name="ScriptGuid">{D453AFE0-BB41-44EB-AB82-EAD2F3493EF8}</string>
 							<ProtectedString name="Source"><![CDATA[local p = script.Parent
 
 p.Text = 'Version: ' .. p.Parent.Parent.Parent.Version.Value]]></ProtectedString>
@@ -8916,7 +8916,7 @@ p.Text = 'Version: ' .. p.Parent.Parent.Parent.Version.Value]]></ProtectedString
 							<bool name="Disabled">false</bool>
 							<Content name="LinkedSource"><null></null></Content>
 							<string name="Name">Script</string>
-							<string name="ScriptGuid">{0CDC3047-EBEC-4D47-896C-ECE7281F8385}</string>
+							<string name="ScriptGuid">{D89FE500-A1B9-473C-A2B5-3BF1E209D571}</string>
 							<ProtectedString name="Source"><![CDATA[local p = script.Parent
 
 p.Text = 'Build: ' .. p.Parent.Parent.Parent.Build.Value]]></ProtectedString>
