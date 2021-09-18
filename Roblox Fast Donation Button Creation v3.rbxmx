@@ -4,7 +4,7 @@
 	<Item class="Folder" referent="RBX17A4C1AF6BC64C44B1116CA518812AD0">
 		<Properties>
 			<BinaryString name="AttributesSerialize"></BinaryString>
-			<string name="Name">Roblox Fast Donation Button Creation v2</string>
+			<string name="Name">Roblox Fast Donation Button Creation v3</string>
 			<int64 name="SourceAssetId">-1</int64>
 			<BinaryString name="Tags"></BinaryString>
 		</Properties>
@@ -85,7 +85,7 @@ GamersInternational, Founder of Rii-built Studios
 				<string name="Name">Build</string>
 				<int64 name="SourceAssetId">-1</int64>
 				<BinaryString name="Tags"></BinaryString>
-				<string name="Value">19</string>
+				<string name="Value">22</string>
 			</Properties>
 		</Item>
 		<Item class="StringValue" referent="RBXEAFAC82FB4594A5DA118BF84FA9BE7B0">
@@ -803,7 +803,7 @@ GamersInternational, Founder of Rii-built Studios
 					<int64 name="SourceAssetId">-1</int64>
 					<token name="Style">0</token>
 					<BinaryString name="Tags"></BinaryString>
-					<bool name="Visible">false</bool>
+					<bool name="Visible">true</bool>
 					<int name="ZIndex">1</int>
 				</Properties>
 				<Item class="Frame" referent="RBXFD8DC95C83DF40BE84D6CFF3D1C21F4D">
@@ -3182,7 +3182,7 @@ script.Parent.MouseButton1Click:Connect(click)]]></ProtectedString>
 					<int64 name="SourceAssetId">-1</int64>
 					<token name="Style">0</token>
 					<BinaryString name="Tags"></BinaryString>
-					<bool name="Visible">true</bool>
+					<bool name="Visible">false</bool>
 					<int name="ZIndex">1</int>
 				</Properties>
 				<Item class="Frame" referent="RBXFEB5CE12D8CA44E1A6402A25C60D6F92">
@@ -4781,42 +4781,41 @@ p.Text = 'Build: ' .. p.Parent.Parent.Parent.Build.Value]]></ProtectedString>
 							<string name="Name">Script</string>
 							<string name="ScriptGuid">{1A9928BC-0E7E-4FA2-8866-4C9414F4FF62}</string>
 							<ProtectedString name="Source"><![CDATA[local par = script.Parent
-local tb = par.TextButton
-local ib = par.Frame.ImageLabel
+local ib = par.Frame
 local core = par.Parent.Parent
 local help = par.Parent.Help
 local about = par.Parent.Settings
 
-tb.Activated:Connect(function()
+par.TextButton.MouseButton1Click:Connect(function()
 	if core.Home.Visible == true then
 		return
 	else
 		core.Home.Visible = true
-		tb.TextColor3.Color3.fromRGB(0, 255, 127)
-		ib.Parent.BackgroundTransparency = 0
+		par.TextButton.TextColor3 = Color3.fromRGB(0, 255, 127)
+		ib.BackgroundTransparency = 0
 		---
 		core.Help.Visible = false
-		help.TextButton.TextColor3.Color3.fromRGB(255, 255, 255)
+		help.TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 		help.Frame.BackgroundTransparency = 1
 		core.About.Visible = false
-		about.TextButton.TextColor3.Color3.fromRGB(255, 255, 255)
+		about.TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 		about.Frame.BackgroundTransparency = 1
 	end
 end)
 
-ib.Activated:Connect(function()
+ib.ImageLabel.MouseButton1Click:Connect(function()
 	if core.Home.Visible == true then
 		return
 	else
 		core.Home.Visible = true
-		tb.TextColor3.Color3.fromRGB(0, 255, 127)
-		ib.Parent.BackgroundTransparency = 0
+		par.TextButton.TextColor3 = Color3.fromRGB(0, 255, 127)
+		ib.BackgroundTransparency = 0
 		---
 		core.Help.Visible = false
-		help.TextButton.TextColor3.Color3.fromRGB(255, 255, 255)
+		help.TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 		help.Frame.BackgroundTransparency = 1
 		core.About.Visible = false
-		about.TextButton.TextColor3.Color3.fromRGB(255, 255, 255)
+		about.TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 		about.Frame.BackgroundTransparency = 1
 	end
 end)]]></ProtectedString>
@@ -5145,50 +5144,49 @@ end)]]></ProtectedString>
 							</Properties>
 						</Item>
 					</Item>
-					<Item class="Script" referent="RBX3C4DDBFAE95B451F9B5942555CCD39D8">
+					<Item class="Script" referent="RBXB788D2AECE7E4FA2BDFA43729EFF8A65">
 						<Properties>
 							<BinaryString name="AttributesSerialize"></BinaryString>
 							<bool name="Disabled">false</bool>
 							<Content name="LinkedSource"><null></null></Content>
 							<string name="Name">Script</string>
-							<string name="ScriptGuid">{EA1750C9-9D49-4CCE-BDB2-A3E1DCF81AED}</string>
+							<string name="ScriptGuid">{EBC2915C-3B30-4737-9B26-C673E388C295}</string>
 							<ProtectedString name="Source"><![CDATA[local par = script.Parent
-local tb = par.TextButton
-local ib = par.Frame.ImageLabel
+local ib = par.Frame
 local core = par.Parent.Parent
 local help = par.Parent.Home
 local about = par.Parent.Settings
 
-tb.Activated:Connect(function()
+par.TextButton.MouseButton1Click:Connect(function()
 	if core.Help.Visible == true then
 		return
 	else
 		core.Help.Visible = true
-		tb.TextColor3.Color3.fromRGB(0, 255, 127)
-		ib.Parent.BackgroundTransparency = 0
+		par.TextButton.TextColor3 = Color3.fromRGB(0, 255, 127)
+		ib.BackgroundTransparency = 0
 		---
 		core.Home.Visible = false
-		help.TextButton.TextColor3.Color3.fromRGB(255, 255, 255)
+		help.TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 		help.Frame.BackgroundTransparency = 1
 		core.About.Visible = false
-		about.TextButton.TextColor3.Color3.fromRGB(255, 255, 255)
+		about.TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 		about.Frame.BackgroundTransparency = 1
 	end
 end)
 
-ib.Activated:Connect(function()
+ib.ImageLabel.MouseButton1Click:Connect(function()
 	if core.Help.Visible == true then
 		return
 	else
 		core.Help.Visible = true
-		tb.TextColor3.Color3.fromRGB(0, 255, 127)
-		ib.Parent.BackgroundTransparency = 0
+		par.TextButton.TextColor3 = Color3.fromRGB(0, 255, 127)
+		ib.BackgroundTransparency = 0
 		---
 		core.Home.Visible = false
-		help.TextButton.TextColor3.Color3.fromRGB(255, 255, 255)
+		help.TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 		help.Frame.BackgroundTransparency = 1
 		core.About.Visible = false
-		about.TextButton.TextColor3.Color3.fromRGB(255, 255, 255)
+		about.TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 		about.Frame.BackgroundTransparency = 1
 	end
 end)]]></ProtectedString>
@@ -5516,6 +5514,56 @@ end)]]></ProtectedString>
 								<int name="ZIndex">1</int>
 							</Properties>
 						</Item>
+					</Item>
+					<Item class="Script" referent="RBXD855AA355F944D53BEDFE1143C4F1C36">
+						<Properties>
+							<BinaryString name="AttributesSerialize"></BinaryString>
+							<bool name="Disabled">false</bool>
+							<Content name="LinkedSource"><null></null></Content>
+							<string name="Name">Script</string>
+							<string name="ScriptGuid">{7B20C2CC-4E2A-4A6C-B9BD-8B127323949F}</string>
+							<ProtectedString name="Source"><![CDATA[local par = script.Parent
+local ib = par.Frame
+local core = par.Parent.Parent
+local help = par.Parent.Help
+local about = par.Parent.Home
+
+par.TextButton.MouseButton1Click:Connect(function()
+	if core.About.Visible == true then
+		return
+	else
+		core.About.Visible = true
+		par.TextButton.TextColor3 = Color3.fromRGB(0, 255, 127)
+		ib.BackgroundTransparency = 0
+		---
+		core.Help.Visible = false
+		help.TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+		help.Frame.BackgroundTransparency = 1
+		core.Home.Visible = false
+		about.TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+		about.Frame.BackgroundTransparency = 1
+	end
+end)
+
+ib.ImageLabel.MouseButton1Click:Connect(function()
+	if core.About.Visible == true then
+		return
+	else
+		core.About.Visible = true
+		par.TextButton.TextColor3 = Color3.fromRGB(0, 255, 127)
+		ib.BackgroundTransparency = 0
+		---
+		core.Help.Visible = false
+		help.TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+		help.Frame.BackgroundTransparency = 1
+		core.Home.Visible = false
+		about.TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+		about.Frame.BackgroundTransparency = 1
+	end
+end)]]></ProtectedString>
+							<int64 name="SourceAssetId">-1</int64>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
 					</Item>
 				</Item>
 			</Item>
