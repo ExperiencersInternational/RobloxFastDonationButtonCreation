@@ -1,6 +1,6 @@
-# Roblox Fast Donation Button Creation [Beta]
+# Roblox Fast Donation Button Creation
 
-## This plugin has reached End of Life status, after version 3.0 is released, do not expect updates apart from bug fixes. Learn more and discuss this at: https://github.com/ExperiencersInternational/RobloxFastDonationButtonCreation/discussions/13
+## This plugin has been discontinued, pull requests will still be merged, but I will not be making any updates myself. I plan to eventually integrate all the features + more into the successor to blisstools. Learn more and discuss this at: https://github.com/ExperiencersInternational/RobloxFastDonationButtonCreation/discussions/13
 A free Roblox plugin to allow easy creation of donation buttons in your game. Also works for shirts, pants and models.
 
 Created by GamersInternational and the Rii-built Studios team.
